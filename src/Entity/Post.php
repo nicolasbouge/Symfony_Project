@@ -20,7 +20,7 @@ class Post
     private ?string $Content = null;
 
 
-    #[ORM\ManyToOne(targetEntity: User::class)]
+    #[ORM\ManyToOne(targetEntity: Users::class)]
     #[ORM\JoinColumn(nullable: true)]
 
     private $author;
