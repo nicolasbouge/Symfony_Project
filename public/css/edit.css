@@ -1,0 +1,76 @@
+body {
+    font-family: "Yu-Gi-Oh! Font", sans-serif; /* Utilisez une police de caractères Yu-Gi-Oh! si disponible */
+    background-color: #292828; /* Couleur de fond sombre */
+    color: #fff; /* Texte blanc */
+    margin: 0;
+    padding: 0;
+}
+
+.example-wrapper {
+    background-color: #8B4513; /* Marron */
+    border: 2px solid #D2691E; /* Bordure orange */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Ombre légère blanche */
+    text-align: center;
+    border-radius: 10px;
+    width: 80%; /* Largeur du rectangle */
+    margin: 1em auto; /* Pour centrer horizontalement */
+    max-width: 800px;
+    width: 95%;
+    font: 18px/1.5 sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+    color: #fff; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: center;
+     /* Aligner le texte à gauche */
+}
+
+
+/* Style des champs du formulaire */
+.form-group {
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #1a1a1a; /* Fond sombre pour les champs de saisie */
+    color: #fff; /* Texte blanc */
+    border: 1px solid #D2691E; 
+    border-radius: 4px;
+}
+
+/* Style du bouton de soumission */
+button[type="submit"] {
+    background-color: #A0522D; 
+    color: #fff; 
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #A0522D; 
+}

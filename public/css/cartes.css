@@ -1,0 +1,80 @@
+/* Modifiez le CSS pour afficher la description sous le nom */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #D2691E; /* Brun doré */
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #ffcc00; /* Jaune */
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff6600; /* Orange */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #8B4513; /* Brun */
+    color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #D2691E; /* Brun doré */
+    border-radius: 5px;
+    display: flex; /* Utilisez Flexbox */
+    align-items: center; /* Alignez verticalement au centre */
+}
+
+li img {
+    max-width: 200px; /* Ajustez la taille de l'image */
+    height: auto;
+}
+
+li a {
+    background-color: #ffcc00; /* Jaune */
+    color: #1a1a1a; /* Noir */
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 2px solid #ffcc00; /* Jaune */
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+li a:hover {
+    text-decoration: none;
+    color: #ff6600; /* Orange */
+}
+
+/* Nouvelles règles pour afficher la description sous le nom */
+li > div {
+    flex: 1; /* Remplit l'espace disponible horizontalement */
+    flex-direction: column; /* Affiche les éléments en colonne */
+    align-items: flex-start; /* Alignez les éléments à gauche */
+}
+
+.description {
+    margin-top: 10px; /* Marge pour séparer la description du nom */
+}
+.card-image {
+    transition: transform 0.1s;
+}
+
+.card-image:hover {
+    transform: scale(1.5);
+}

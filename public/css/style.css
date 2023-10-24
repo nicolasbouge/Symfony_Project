@@ -1,0 +1,94 @@
+/* Ajoutez ce code CSS dans un fichier CSS séparé ou dans une balise <style> dans votre modèle Twig */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #8B4513; /* Brun */
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 2px solid #8B4513; /* Brun */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #D2691E; /* Brun doré */
+    color: #fff;
+}
+
+tr{
+    background-color: #D2691E; /* Brun doré */
+    color: #fff;
+}
+
+
+a {
+    text-decoration: none;
+    color: #D2691E; /* Brun doré */
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #A0522D; /* Brun clair */
+}
+
+.btn-primary {
+    background-color: #ffcc00; /* Jaune */
+    color: #000; /* Noir */
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 2px solid #ffcc00; /* Jaune */
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.btn-secondary {
+    background-color: #ff6600; /* Orange */
+    color: #000; /* Noir */
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 2px solid #ff6600; /* Orange */
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    text-decoration: none;
+}
+.left-banner, .right-banner {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 350px; /* Largeur des bannières */
+    background: url('https://i.pinimg.com/originals/e9/ff/8b/e9ff8b08aa691231a94241fa737d693a.jpg') center/auto 100%; /* Image de fond de la bannière */
+
+    z-index: 1; /* Pour s'assurer que les bannières sont superposées au contenu */
+}
+
+.left-banner {
+    left: 0; /* Bannière à gauche */
+}
+
+.right-banner {
+    right: 0; /* Bannière à droite */
+}

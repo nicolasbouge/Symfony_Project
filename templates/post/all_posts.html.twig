@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tous les Posts{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<h1>Tous les Posts</h1>
+
+<a href="{{path('app_home')}}">Retourner à l'acceuil</a>
+<table>
+    <tr>
+        <th>Titre</th>
+        <th>Contenu</th>
+        <th>Actions</th>
+    </tr>
+    {% for post in posts %}
+        <tr>
+            <td>{{ post.Title }}</td>
+            <td>{{ post.Content }}</td>
+            <td>
+                <a href="{{ path('edit_post', {'id': post.id}) }}" class="btn-secondary">Modifier</a>
+                <a href="{{ path('delete_post', {'id': post.id}) }}" class="btn-secondary">Supprimer</a>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+
+<a href="{{ path('post') }}">Créer un nouveau Post</a>
+
+{% endblock %}
